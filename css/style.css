@@ -1,95 +1,118 @@
+/* Meyer's Reset CSS */
+@import url('./reset.css');
+
+/* Google Fonts: Megrim, Raleway */
 @import url('https://fonts.googleapis.com/css2?family=Megrim&family=Raleway&display=swap');
 
+/* ==== */
+/* BASE */
+/* ==== */
+
 body {
-    background-color: rgb(60, 47, 60);
+  background-color: rgb(60, 47, 60);
 }
 
 header {
-    background-color: rgb(32, 27, 32);
-    padding: 50px 0 20px 0;
+  background-color: rgb(32, 27, 32);
+  padding-top: 80px;
 }
 
 h1 {
-    font-size: 36px;
-    font-family: 'Megrim', serif;
-    color: rgb(211, 177, 177);
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 8px 8px 12px rgb(245, 42, 6);
-    margin-bottom: 40px;
+  color: rgb(211, 177, 177);
+  font-family: 'Megrim', serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 80px;
+  text-align: center;
+  text-shadow: 8px 8px 12px rgb(245, 42, 6);
 }
 
 h2 {
-    font-family: 'Megrim', sans-serif;
-    font-size: 30px;
-    color: rgb(25, 128, 24);
-    text-align: center;
-    padding: 80px 0;
-    font-weight: bold;
+  color: rgb(25, 128, 24);
+  font-family: 'Megrim', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 80px 0;
+  text-align: center;
 }
 
 p {
-    font-family: 'Raleway', sans-serif;
-    color:orange;
-    margin: 5px 0 0 0;
-    text-align: center;
-    font-size: 24px;
+  color:orange;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  text-align: center;
 }
 
 span {
-    text-shadow: 4px 4px 4px rgb(190, 31, 3);
+  text-shadow: 4px 4px 4px rgb(190, 31, 3);
 }
 
-li a, li p {
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    color: orange;
+/* === */
+/* Nav */
+/* === */
+nav {
+  background-color: rgb(22, 18, 22);
 }
 
 ul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
+
 
 li {
-    padding: 10px 40px;
+  padding: 20px 40px;
 }
 
-.cover-image {
-    max-width: 300px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 8px 4px rgb(129, 50, 50);
+li a, li p {
+  color: orange;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
 }
 
-.details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding:0 30px 80px 30px;
-    max-width: 300px;
-}
+/* ========== */
+/* Components */
+/* ========== */
+
 .event {
-    background: linear-gradient(rgb(32, 27, 32), rgb(60, 47, 60))
+  background: linear-gradient(rgb(32, 27, 32), rgb(60, 47, 60))
 }
 
-.films {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+.showing {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
 
-.title-link {
-    font-size: 24px;
-    font-weight: bold;
+.film {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:0 30px 80px 30px;
+  max-width: 300px;
 }
+
+.cover-image img{
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px 4px rgb(129, 50, 50);
+  margin-bottom: 10px;
+  max-width: 200px;
+}
+
+/* ============ */
+/* DESKTOP VIEW */
+/* ============ */
 
 @media (min-width: 620px) {
-    h1 {
-        font-size: 64px;
-    }
-    h2 {
-        font-size: 48px;
-    }
+  h1 {
+    font-size: 64px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  .cover-image img {
+    max-width: 300px;
+  }
 }
