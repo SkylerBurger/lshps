@@ -67,11 +67,10 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding:0 30px 60px 30px;
+    padding:0 30px 80px 30px;
     max-width: 300px;
 }
 .event {
-    margin-bottom: 80px;
     background: linear-gradient(rgb(32, 27, 32), rgb(60, 47, 60))
 }
 
