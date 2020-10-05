@@ -101,6 +101,10 @@ li a, li p {
   max-width: 200px;
 }
 
+.past {
+  text-decoration: line-through;
+}
+
 /* ============ */
 /* DESKTOP VIEW */
 /* ============ */
